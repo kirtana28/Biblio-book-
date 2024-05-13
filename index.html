@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblio</title>
+    <link rel="icon" href="image.png">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="Navbar">
+        <h1>Biblio</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Wuthering Heights</h2>
+            <h5>Emily Brontë</h5><br>
+            <p>The Brontë sisters — Anne, Charlotte, and Emily shared both the family talent of literary genius and the tragedy of dying young. Emily Brontë’s only published novel, Wuthering Heights, revels in the stark beauty of the Yorkshire moors in which live two families seemingly doomed to sorrow. The history of the Earnshaw and Linton families crosses with that of the Earnshaw’s foster child, Heathcliff, in a gothic tale full of love powerful enough to defy death itself.</p>
+            <br>
+            <button onclick="deletebook(event)">Delete</button>
+
+            
+        </div>
+
+        <div class="book-container">
+            <h2>IF IT'S NOT FOREVER
+                It’s Not Love</h2>
+            <h5>Durjoy Datta</h5><br>
+            <p>To the everlasting power of love . . . When Deb, an author and publisher, survives the bomb blasts at Chandni Chowk, he knows his life is nothing short of a miracle. And though he escapes with minor injuries, he is haunted by the images and voices that he heard on that unfortunate day. Even as he recovers, his feet take him to where the blasts took place. From the burnt remains he discovers a diary.</p>
+            <br>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+
+        <div class="book-container">
+            <h2>To Kill a Mockingbird</h2>
+            <h5>Harper Lee</h5><br>
+            <p>The story, told by Jean Louise Finch, takes place during three years (1933–35) of the Great Depression in the fictional town of Maycomb, Alabama, the seat of Maycomb County. Nicknamed Scout, the narrator, who is six years old at the beginning of the book, lives with her older brother Jeremy, nicknamed Jem, and their widowed father Atticus, a middle-aged lawyer. They also have a black cook, Calpurnia, who has been with the family for many years and helps Atticus raise the two children.</p>
+            <br>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+
+        <div class="book-container">
+            <h2>Little Women</h2>
+            <h5>Louisa May Alcott</h5><br>
+            <p>In 1868, Jo March, a teacher in New York City, goes to Mr. Dashwood, an editor who agrees to publish a story she has written. Her youngest sister, Amy, who is in Paris with their Aunt March, attends a party with their childhood friend and neighbor, Laurie. Amy becomes angry at Laurie's drunken behavior, prompting him to mock her for spending time with wealthy businessman Fred Vaughn. Jo becomes hurt when Friedrich Bhaer, a professor interested in her, gives critical feedback on her writing, angering her.</p>
+            <br>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book title input">
+            <input type="text" placeholder="Book Author" id="book author input">
+            <textarea placeholder="Short Description" id="book Description"></textarea>
+            <button id="addbook">ADD</button>
+            <button id="cancel popup">CANCEL</button>
+        </form>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
